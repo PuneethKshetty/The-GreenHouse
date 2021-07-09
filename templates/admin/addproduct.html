@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+ <style>
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.button {
+  float:left;
+  width: 20%;
+
+}
+#cancel-button{
+    float:right;
+    width:20%;
+    margin-right: 600px;
+    margin-top: -55px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding-left: 50px;
+ 
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+
+<body>
+<nav class="navbar navbar-light" style="background-color: green;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="color:white;" href="/">The Green House 🌱</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/" style="color:white;">Home</a></li>
+        <li><a href="/contact" style="color:white;">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/addproduct" style="color:white;"><span class="glyphicon glyphicon-shopping-cart"></span> Add Product</a></li>
+          <li><a href="/viewproduct" style="color:white;"><span class="glyphicon glyphicon-shopping-cart"></span> View New Product</a></li>
+        <li><a href="/adminreg" style="color:white;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/adminlog" style="color:white;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<form action="/addproduct" method="post" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Add New Product (Admin Only) !!</h1>
+      <p>Only Admin has the access to this page.</p>
+      <hr>
+  
+      <label>Name</label>
+      <input type="text" placeholder="Enter name" name="name" required>
+  
+      <label for="category"><b>Category</b></label> <br>
+      <select name="category" id="category">
+        <option value="1">House Plants</option>
+        <option value="2">Office Plants</option>
+        <option value="3">Garden Plants</option>
+        <option value="4">Bonsais</option>
+        <option value="5">Orchids</option>
+    </select><br><br>
+  
+    <label for="price">Price:</label>
+            <input type="text" id="price" placeholder="0.00"/>
+
+    <label for="description">Description</label>
+      <input type="text" id="description" placeholder="Enter description">
+
+      <div class="clearfix">
+      <a href="/ViewProduct/<id>"> <button id="add-product-button" class="button" onclick="return confirm('Product is Added Please Move to User Page')">Add</button>
+     </a>
+      </div>
+        <div class="clearfix">
+        <a href="/addproduct">
+            <button class="button" id="cancel-button">Cancel</button>
+        </a>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
+

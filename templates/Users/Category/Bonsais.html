@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Bonsais</title>
+</head>
+<body>
+       
+    <nav class="navbar navbar-light" style="background-color: green;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" style="color:white;" href="/inner">The Green House 🌱</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/inner" style="color:white;">Home</a></li>
+            <li><a href="/about" style="color:white;">About Us</a></li>
+            <li><a href="https://www.planetnatural.com/vegetable-gardening-guru/tips/" style="color:white;">Tips & Tricks</a></li>
+            <li><a href="/contact" style="color:white;">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/AddCart/<id>" style="color:white;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            <li><a href="/register" style="color:white;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login" style="color:white;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6" id="b_image">
+                <img src="/static/images/banner/b3.jpg" alt="" width="500" height="500">
+            </div>
+            <div class="col-md-6">
+                 <form action="/Bonsais" method="post">
+               <label>Product Name : </label>
+                    <input type="text" style="border-color:transparent;" name="P_name" value="Bonsais ">
+                <hr>
+                <label>Product Price : Rs.</label>
+                    <input type="number" style="border-color:transparent;" name="P_price" value="45">
+                <hr>
+                <b>Product description :</b>
+                     <p>A bonsai is created beginning with a specimen of source material. This may be a cutting, seedling, or small tree of a species suitable for bonsai development. <br>Bonsai can be created from nearly any perennial woody-stemmed tree or shrub species that produces true branches and can be cultivated to remain small through pot confinement with crown and root pruning. Some species are popular as bonsai material because they have characteristics, such as small leaves or needles, that make them appropriate for the compact visual scope of bonsai.</p>
+
+                    <br>
+                    <input type="hidden" name="P_id" value="">
+                    <label>Quantity: </label><br>
+                    <input type="number" name="P_qty" value="1" min="1" max="10"><br><br>
+                    <label for="colors">Colors: </label><br>
+                    <select name="P_color" id="colors">
+                        <option value="Dark Green">Dark Green</option>
+                        <option value="Lime light">Limelight</option>
+                        <option value="Normal Faded">Normal Faded</option>
+                    </select> <br><br>
+                    <button type="submit" class="btn btn-sm btn-warning">Add to Cart</button>
+
+            </div>
+              </form>
+        </div>
+        <hr>
+        
+            <div class="col-md-12" id="s_image">
+                <h1>Similar Products</h1>
+                <img src="/static/images/product/p4.jpg" alt="p1" width="200" height="200">
+                <img src="/static/images/product/p5.jpg" alt="p2" width="200" height="200" class="ml-5">
+                <img src="/static/images/product/p6.jpg" alt="p3" width="200" height="200" class="ml-5">
+            </div>
+    
+       
+    </div>
+    
+    <script>
+       var b_image = document.getElementById('b_image');
+       var s_image = document.getElementById('s_image').getElementsByTagName('img');
+        for(var i = 0; i < s_image.length; i++){
+    
+            s_image[i].addEventListener('click', full_image);
+        }
+        function full_image(){
+            var ImageSRC = this.getAttribute('src');
+            b_image.innerHTML = "<img src=" + ImageSRC + " width='400' height='400'>";
+        }
+    </script>
+</body>
+</html>

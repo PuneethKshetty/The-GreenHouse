@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>House Plants</title>
+</head>
+<body>
+<style>
+        table {
+        margin-top:2%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+button {
+  margin-bottom:2%;
+  width: 20%;
+  padding: 2px;
+  background: #008000;
+  color:white;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+button:hover {
+  background: #6f116f;
+  color:white;
+}
+:: after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h3{
+color:#006600
+}
+</style>
+
+    <nav class="navbar navbar-light" style="background-color: green;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" style="color:white;" href="/inner">The Green House 🌱</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/inner" style="color:white;">Home</a></li>
+            <li><a href="/about" style="color:white;">About Us</a></li>
+            <li><a href="https://www.planetnatural.com/vegetable-gardening-guru/tips/" style="color:white;">Tips & Tricks</a></li>
+            <li><a href="/contact" style="color:white;">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/AddCart/<id>" style="color:white;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            <li><a href="/register" style="color:white;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login" style="color:white;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<!---TABLE DISPLAY --->
+
+<center><u><h3 style="">CART-DETAILS</h3></u></center>
+<table style="width:97%;margin-left:auto;margin-right:auto">
+    <td><b><h4>Product-Id</h4></b></td>
+    <td><b><h4>Product-Name</h4></b></td>
+     <td><b><h4>Product-Price</h4></b></td>
+    <td><b><h4>Product-Quantity</h4></b></td>
+    <td><b><h4>Product-Color</h4></b></td>
+
+<tr>
+{% for cell in data %}
+    {% for c in cell %}
+
+    <td>{{c}}</td>
+
+
+{% endfor %}
+</tr>
+    {% endfor %}
+</table>
+        <a href="/update/{{id}}" class="btn btn-warning btn-lg" style="margin-left:42%;margin-top:50px;"onclick="return confirm('Are You Sure to Update?')" data-toggle="modal" data-target="#modaledit{{id}}">Edit</a>
+        <a href="/delete/{{id}}" class="btn btn-danger btn-lg" style="margin-top:50px;margin-left:58px;" onclick="return confirm('Are You Sure For Delete?')">Delete</a>
+
+<!---->
+<a href="/billing"><button class="btn btn-success btn-lg" type="submit" style="margin-left:670px;margin-top:60px;">Move to Shipping</button></a>
+</body>
+</html>

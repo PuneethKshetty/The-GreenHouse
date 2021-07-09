@@ -1,0 +1,77 @@
+
+  <!-- GALLERY -->
+    <!--
+  <section class="product product-v6">
+    <div class="container">
+        <div class="list-category-banner row">
+            <div class="items items-cate col-md-4 col-sm-6">
+                <div class="wrap-box-1">
+                    <div class="box-img">
+                       <a href="" title="">
+                        <img src="/static/images/banner/b5.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                        <div class="content-item">
+                            <h5 class="title-h5"><a href="/HP/" title="">House Plants</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items items-cate col-md-4 col-sm-6">
+                <div class="wrap-box-1">
+                    <div class="box-img">
+                        <a href="{{ url_for('/OP') }}" title="">
+                        <img src="/static/images/banner/b6.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                        <div class="content-item">
+                            <h5 class="title-h5"><a href="/OP/" title="">Office Plants</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items items-cate col-md-4 col-sm-6">
+                <div class="wrap-box-1">
+                    <div class="box-img">
+                        <a href="/GP/" title="">
+                        <img src="/static/images/banner/b4.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                        <div class="content-item">
+                            <h5 class="title-h5"><a href="/GP/" title="">Garden Plants</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items items-cate col-md-4 col-sm-6">
+                <div class="wrap-box-1">
+                    <div class="box-img">
+                        <a href="/Bonsais/" title="">
+                        <img src="/static/images/banner/b3.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                        <div class="content-item">
+                            <h5 class="title-h5"><a href="/Bonsais" title="">Bonsais</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items items-cate col-md-4 col-sm-6">
+                <div class="wrap-box-1">
+                    <div class="box-img">
+                        <a href="/Orchids/" title="">
+                        <img src="/static/images/banner/b2.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                        <div class="content-item">
+                            <h5 class="title-h5"><a href="/Orchids" title="">Orchids</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items items-cate col-md-4 col-sm-6">
+                <div class="wrap-box-1">
+                    <div class="box-img">
+                        <a href="/index" title="">
+                        <img src="/static/images/banner/b1.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                        <div class="content-item">
+                            <h5 class="title-h5"><a href="/index" title="">Accessories</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ -->
+<!-- END / GALLERY -->

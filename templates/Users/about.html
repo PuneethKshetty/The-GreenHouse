@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<style>
+ button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+  
+<body>
+    <!--ABOUT US-->
+
+    <nav class="navbar navbar-light" style="background-color: green;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" style="color:white;" href="/inner">The Green House 🌱</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/inner" style="color:white;">Home</a></li>
+            <li><a href="{{ url_for('about') }}" style="color:white;">About Us</a></li>
+            <li><a href="https://www.planetnatural.com/vegetable-gardening-guru/tips/" style="color:white;">Tips & Tricks</a></li>
+            <li><a href="/contact" style="color:white;">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/AddCart/<id>" style="color:white;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            <li><a href="/register" style="color:white;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login" style="color:white;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+
+</head>
+<body>
+
+<h2 style="text-align:center">About Us !!</h2>
+<p style="text-align: center;"> Wanna Know us more please go through our profile card...</p>
+
+<div class="card" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin-left: 350px;
+margin-top: 20px;
+text-align: center;
+font-family: arial;">
+  <img src="/static/images/about/p1.jpeg" alt="Me" style="width:100%">
+  <h1>Puneeth K Shetty</h1>
+  <p class="title">3rd Year CSE Undergraduate</p>
+  <p>Sahyadri college of Engineering</p>
+  <div style="margin: 24px 0;">
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-dribbble"></i></a> 
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-twitter"></i></a>  
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-linkedin"></i></a>  
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button style=" border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;">Contact</button></p>
+</div>
+
+<div class="card" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin-left: 780px;
+margin-top: -700px;
+text-align: center;
+font-family: arial;">
+  <img src="/static/images/about/p2.jpeg" alt="John" style="width:100%;margin-left: 0px;">
+  <h1>Spandan H Shetty</h1>
+  <p class="title">3rd Year CSE Undergraduate</p>
+  <p>Sahyadri college of Engineering</p>
+  <div style="margin: 24px 0;">
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-dribbble"></i></a> 
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-twitter"></i></a>  
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-linkedin"></i></a>  
+    <a href="/" style="text-decoration: none;
+    font-size: 22px;
+    color: black;"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button style="border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;">Contact</button></p>
+</div>
+
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+
+</body>
+</html>
