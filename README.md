@@ -1,7 +1,7 @@
 <h1 align="left">The GreenHouse ☘️ </h1><br>
 <p float="left">
-  <img src="Screenshots/Screenshot (62).png" width="450" />
-  <img src="Screenshots/Screenshot (62).png" width="450" /> 
+  <img src="Screenshots/Screenshot (62).png" width="400" />
+  <img src="Screenshots/Screenshot (63).png" width="400" /> 
 </p>
 
 ### Introduction :  
