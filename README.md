@@ -5,7 +5,7 @@
 </p>
 
 ### Introduction :  
-As a part of our DBMS mini project, We had come up with an idea for designing a Online site which is basically used to Sell Plants and Flowers. It is mainly made for the people who love gardening and also for the local gardeners who will to sell their Plants at a affordable Price.
+As a part of our DBMS mini project, We had come up with an idea for designing a Online site which is basically used to Buy Plants and Flowers. It is mainly made for the people who love gardening and also for the local gardeners who will to buy their Plants at a affordable Price.
 
 ### Sections Involved : Two Major Sections
 #### Admin Section (Distributor)
